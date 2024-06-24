@@ -2,15 +2,18 @@ package org.java.inheritance.shop;
 
 public class Televisori extends Prodotto {
 	
-	double TvHighSize = 40.40;
-	double TvLargeSize = 50.50;
-	boolean TvSmart = true;
+	double TvHighSize;
+	double TvLargeSize;
+	boolean TvSmart;
 	
-	Televisori (String productName, String productBrand, double productPrice, int productIva){
-		
-		super (productName, productBrand, productPrice, productIva);
+Televisori (String productName, String productBrand, double productPrice, int productIva, 
+		double TvHighSize, double TvLargeSize, boolean TvSmart){
 	
-	}
+	super (productName, productBrand, productPrice, productIva);
+	this.TvHighSize = TvHighSize;
+	this.TvLargeSize = TvLargeSize;
+	this.TvSmart = TvSmart;
+}
 	
 	
 }
